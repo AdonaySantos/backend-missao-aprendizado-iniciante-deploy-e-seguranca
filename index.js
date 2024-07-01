@@ -2,7 +2,7 @@ const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 
 // Preparamos as informações de acesso ao banco de dados
-const dbUrl = "mongodb+srv://admin:K92jkn98knTER9168@cluster0.etwvjn2.mongodb.net";
+const dbUrl = "mongodb+srv://admin:K92jkn98knTER9168@cluster0.etwvjn2.mongodb.net/";
 const dbName = "mongodb-intro-e-implementacao";
 
 // Declaramos a função main
@@ -11,7 +11,7 @@ async function main() {
 
   console.log("Conectando ao banco de dados...");
   await client.connect();
-  console.log("Banco de dados conectado com suesso!");
+  console.log("Banco de dados conectado com sucesso!");
 
   const db = client.db(dbName)
   const collection = db.collection('personagem')
