@@ -2,7 +2,7 @@ const express = require('express')
 const { MongoClient, ObjectId } = require('mongodb')
 
 // Preparamos as informações de acesso ao banco de dados
-const dbUrl = 'mongodb+srv://aron:Ezz4G9Ewbzgsj3We@cluster0.etwvjn2.mongodb.net/'
+const dbUrl = 'mongodb+srv://admin:K92jkn98knTER9168@cluster0.etwvjn2.mongodb.net/'
 const dbName = 'mongodb-intro-e-implementacao'
 
 // Declaramos a função main()
